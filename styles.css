@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Red Hat Display Light";
+  src: url('./static/fonts/RedHatDisplay-Light.ttf');
+}
+
+@font-face {
+  font-family: "Red Hat Display Bold";
+  src: url('./static/fonts/RedHatDisplay-Bold.ttf');
+}
+
+*{
+  font-family: 'Red Hat Display Light', 'Courier New', Courier, monospace;
+  padding: 0;
+  margin:0;
+}
+
+body{
+  background-image: url("./static/images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  position: relative;
+  top:65px;
+  width: 450px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  height: 700px;
+  box-shadow: 5px 5px 5px hsl(0, 4%, 88%);
+}
+
+.card > button{
+  display: block;
+  width: 330px;
+  height: 40px;
+  align-content: center;
+  margin-left: 60px;
+  margin-top:20px;
+  border:none;
+}
+
+
+
+.card__title{
+   font-family: 'Red Hat Display Bold', 'Courier New', Courier, monospace;
+   text-align: center;
+   margin: 40px 0px 20px 0px;
+   font-weight: 900;
+  font-size: 25px;
+}
+
+.card__text{
+  text-align: center;
+  padding:0px 60px 20px 60px;
+}
+
+
+
+.card__image{
+  display: block;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 5px 0px 5px hsl(0, 4%, 88%);
+}
+
+.card__body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding:20px;
+  margin: 10px 60px;
+  border-radius: 14px;
+}
+
+.card__body + button {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 12px;
+  color:white;
+  font-weight: 700;
+  font-family: 'Red Hat Display Bold', 'Courier New', Courier, monospace;
+  box-shadow: 5px 5px 5px hsl(0, 4%, 88%);
+}
+
+.card__body + button:active {
+  background-color: hsl(225, 100%, 94%);
+}
+
+
+
+button:nth-last-child(1){
+  background-color: white;
+  border-radius: 12px;
+  color:hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-family: 'Red Hat Display Bold', 'Courier New', Courier, monospace;
+}
+
+button:nth-last-child(1):active{
+  color:hsl(223, 47%, 23%);
+}
+
+.card__body__plan{
+  display: block;
+  text-align: left;
+  width: 60%;
+}
+
+.card__body__plan > p:first-child{
+  font-weight: 700;
+  font-family: 'Red Hat Display Bold', 'Courier New', Courier, monospace;
+  font-size:15px;
+}
+
+
