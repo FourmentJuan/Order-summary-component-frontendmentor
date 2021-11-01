@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Red Hat Display Light";
-  src: url('./static/fonts/RedHatDisplay-Light.ttf');
+  src: url('./RedHatDisplay-Light.ttf');
 }
 
 @font-face {
   font-family: "Red Hat Display Bold";
-  src: url('./static/fonts/RedHatDisplay-Bold.ttf');
+  src: url('./RedHatDisplay-Bold.ttf');
 }
 
 *{
